@@ -33,26 +33,29 @@ h1 {
 .big-container {
     display: flex;
     flex-wrap: nowrap;
+    align-items:flex-start;
     width: 100%;
     gap: 2px;
 
     .container {
     background-color: var(--normalgrey);
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 0px;
     display: flex;
-    width: 66vw;
+    width: 65vw;
     height: 40vw;
 }
 
 .side-container {
-    width: 40vw;
+    width: 32.5vw;
+    height: 21.5vw;
+    margin-bottom: 3px;
     border:solid 1px var(--highlights);
     border-radius: 5px;
 }
 }
 .topbar{
     background-color: var(--dimgrey);
-    border-radius: 5px 5px 0px  0px;
+    border-radius: 0px 5px 0px  0px;
     padding: 6px;
     color: transparent;
     text-shadow: 0px 0px 0px var(--textshadow);
