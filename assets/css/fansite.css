@@ -10,6 +10,7 @@
     --important: #f7de7b;
     --darkgrey: #181818;
     --normalgrey: #545454;
+    --dimgrey: #303030;
     --highlights: #7f7f7f;
 
 }
@@ -32,25 +33,38 @@ h1 {
 .big-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: var(--normalgrey);
-    border-radius: 5px;
-    background-position: right top;
-    padding-bottom: 30px;
-    border:solid 1px var(--highlights);
-    box-shadow: 0px 2.5px 0px var(--textshadow);
+    align-items:flex-start;
+    width: 100%;
+    gap: 2px;
 
     .container {
-    background-color: var(--highlights);
-    border-radius: 10px;
+    background-color: var(--normalgrey);
+    border-radius: 0px 0px 5px 0px;
     display: flex;
-    padding: 10px;
-    width: 70vw;
+    width: 65vw;
+    height: 40vw;
 }
 
 .side-container {
-    width: 30vw;
+    width: 32.5vw;
+    height: 21.5vw;
+    margin-bottom: 3px;
+    border:solid 1px var(--highlights);
+    border-radius: 5px;
 }
 }
+.topbar{
+    background-color: var(--dimgrey);
+    border-radius: 0px 5px 0px  0px;
+    padding: 6px;
+    color: transparent;
+    text-shadow: 0px 0px 0px var(--textshadow);
+    text-decoration: none; 
+    top: 0;
+}
+
+
+
 
 
 
@@ -64,7 +78,7 @@ header {
 .header-title {
     padding: 6px 0px 6px 0px;
     margin-top: 1vh;
-    background-color: var(--normalgrey);
+    background-image: linear-gradient(to bottom, var(--dimgrey),var(--normalgrey));
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px -2.5px 0px var(--highlights),
     0px 2.5px 0px var(--textshadow);
@@ -88,6 +102,7 @@ header {
         padding: 5px;
         background-color: #29292980;
         border-radius: 5px;
+        margin-right: 1vw;
     }
 
     a {
@@ -110,12 +125,18 @@ header {
 
     input {
     padding: 0.25rem 0.5rem;
-    border: 1px solid var(--highlights);
+    border: 1.5px solid var(--highlights);
     border-radius: 2px;
-    background-color: transparent;
+    background-color: var(--darkgrey);
     color: var(--normalgrey);
     font-size: 1rem;
-    max-width: 300px;
+    max-width: 200px;
+}
+
+form {
+    padding: 3px;
+    background-color: var(--dimgrey);
+    border-radius: 5px;
 }
 
 input:focus {
