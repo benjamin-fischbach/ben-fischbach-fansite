@@ -86,6 +86,9 @@ h1 {
 }
 
 .bottombar{
+    display: flex;
+    justify-content: center;
+    gap: 0.2vw;
     background-color: var(--dimgrey);
     border-radius: 5px;
     padding: 6px;
@@ -94,6 +97,23 @@ h1 {
     text-shadow: 0px 0px 0px var(--textshadow);
     text-decoration: none; 
     top: 0;
+}
+
+.bottombar .greybutton:last-child {
+  border-radius: 0 6px 6px 0;
+  margin-left: -1px;
+}
+
+.bottombar .greybutton:first-child {
+  border-radius: 6px 0 0 6px;
+  margin-left: 0;
+}
+
+
+.greybutton {
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    background-image:linear-gradient(to top, var(--highlights), var(--normalgrey)) ;
+    color: white;
 }
 
 
