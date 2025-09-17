@@ -54,9 +54,25 @@ h1 {
     border-radius: 5px;
 
     .topbar {
-        background-color: var(--normalgrey);
+        background-color: var(--dimgrey);
         border-radius: 5px 5px 0px 0px;
     }
+    .side-icon-bar {
+    background-color: var(--darkgrey);
+    width: 3vw;
+    height: 19vw;
+    align-content: center;
+    text-align: center;
+
+    ul {
+        
+        li {
+            height: 2vw;
+        list-style: none;
+        color: var(--text);
+    }
+    }
+}
 }
 }
 .topbar{
@@ -139,22 +155,37 @@ header {
     }
 }
 
-.searchbars {
+/* SEARCH BARS*/
+
+.top-search {
     display: flex;
 flex-wrap: nowrap;
     input {
     padding: 0.25rem 0.5rem;
-    border: 1.5px solid var(--highlights);
+    border: 2px solid var(--highlights);
     border-radius: 2px;
+    border-collapse: collapse;
     background-color: var(--darkgrey);
     color: var(--normalgrey);
     width: 10vw;
+    
 }
 
-form {
-    padding: 3px;
-    background-color: var(--dimgrey);
-    border-radius: 5px;
+.searchbutton {
+    text-align: center;
+    text-shadow:1px 1px 0px var(--text);
+    border: 2px solid var(--highlights);
+    background-color: var(--darkgrey);
+    color: var(--normalgrey);
+    height: inherit;
+    width: 2vw;
+    min-width: 25px;
+    height: inherit;
+}
+
+.searchbar {
+    display: flex;
+    padding: 0.5vw;
 }
 
 input:focus {
