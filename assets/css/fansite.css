@@ -38,7 +38,7 @@ h1 {
     gap: 0.5vw;
 
     .container {
-    background-color: var(--normalgrey);
+    background-image:linear-gradient(to bottom right, var(--highlights), var(--normalgrey), var(--normalgrey)) ;
     display: flex;
     border-radius: 0px 0px 5px 0px;
     width: 66vw;
@@ -115,6 +115,8 @@ h1 {
 
 .greybutton {
     padding: 0.5vw 1vw 0.5vw 1vw;
+    border: inset 0.5px var(--text);
+    box-shadow: 1px 2px 0px var(--darkgrey);
     background-image:linear-gradient(to top, var(--highlights), var(--normalgrey)) ;
     color: white;
 }
@@ -164,6 +166,9 @@ header {
         background-color:  var(--dimgrey);
         box-shadow: 1px 2px 0px var(--darkgrey);
         border-radius: 5px 5px 0px 0px;
+        border-top:inset 0.5px var(--normalgrey);
+        border-left:inset 0.5px var(--normalgrey);
+        border-right:inset 0.5px var(--normalgrey);
         text-decoration: none;
         font-size: 1.5vw;
         font-weight: 500;
@@ -172,7 +177,7 @@ header {
     }
 
     a:hover {
-        background-color: var(--highlights);
+        background-image:linear-gradient(to bottom right, var(--highlights), var(--normalgrey),var(--highlights), var(--normalgrey), var(--normalgrey)) ;
         color: var(--textshadow);
     }
 }
