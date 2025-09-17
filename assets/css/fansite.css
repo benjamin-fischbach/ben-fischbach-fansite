@@ -48,7 +48,7 @@ h1 {
 .side-container {
     background-color: var(--dimgrey);
     width: 32.5vw;
-    height: 22vw;
+    height: 21vw;
     margin-bottom: 5px;
     border:solid 0px var(--highlights);
     border-radius: 5px;
@@ -113,10 +113,10 @@ header {
         flex-grow: 5;
         display: flex;
         gap: 0.25vw;
-        padding: 5px;
+        padding: 2.5px;
         margin-left: 5px;
         background-color: #29292980;
-        border-radius: 5px;
+        border-radius: 5px 5px 0px 0px;
         margin-right: 1vw;
     }
 
@@ -125,6 +125,7 @@ header {
         background-color:  var(--dimgrey);
         border-radius: 5px 5px 0px 0px;
         text-decoration: none;
+        font-size: 1.5vw;
         font-weight: 500;
         color: var(--text);
     }
