@@ -40,16 +40,17 @@ h1 {
     .container {
     background-color: var(--normalgrey);
     display: flex;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 0px;
     width: 66vw;
-    height: 37vw;
+    height: 33vw;
 }
 
 .side-container {
     background-color: var(--dimgrey);
-    width: 32.5vw;
-    height: 21vw;
-    margin-bottom: 5px;
+    width: 32vw;
+    height: 19vw;
+    min-height: 120px;
+    margin-bottom: 0.5vw;
     border:solid 0px var(--highlights);
     border-radius: 5px;
 
@@ -59,8 +60,10 @@ h1 {
     }
     .side-icon-bar {
     background-color: var(--darkgrey);
+    border-top: solid 1px var(--textshadow);
+    border-right:solid 1px var(--textshadow);
     width: 3vw;
-    height: 19vw;
+    height: 17vw;
     align-content: center;
     text-align: center;
 
@@ -151,7 +154,7 @@ header {
         gap: 0.25vw;
         padding: 2.5px;
         margin-left: 5px;
-        background-color: #29292980;
+        background-image:linear-gradient(to top, var(--dimgrey), transparent);
         border-radius: 5px 5px 0px 0px;
         margin-right: 1vw;
     }
@@ -159,11 +162,18 @@ header {
     a {
         padding: 2.5px 2vw 2.5px 2vw;
         background-color:  var(--dimgrey);
+        box-shadow: 1px 2px 0px var(--darkgrey);
         border-radius: 5px 5px 0px 0px;
         text-decoration: none;
         font-size: 1.5vw;
         font-weight: 500;
         color: var(--text);
+        cursor: pointer;
+    }
+
+    a:hover {
+        background-color: var(--highlights);
+        color: var(--textshadow);
     }
 }
 
