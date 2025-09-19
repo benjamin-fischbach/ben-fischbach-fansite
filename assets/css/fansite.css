@@ -1,5 +1,5 @@
 * {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,19 +15,23 @@
     --highlights: #7f7f7f;
 }
 
+/* HEADER SECTION*/
+
 header {
     display: flex;
     font-size: large;
+    margin-left: 4vw;
 
-        .header-logo {
+    .header-logo {
         height: 6vw;
+        min-height: 60px;
         padding: 1vw;
-        }
+    }
 
     .header-nav {
         display: flex;
         flex-wrap: nowrap;
-        align-items:flex-start;
+        justify-content: space-between;
         flex-direction: column;
         text-decoration: none;
         padding: 1vw;
@@ -35,19 +39,15 @@ header {
         flex-wrap: nowrap;
         align-content: center;
 
-    .header-title{
-        color: var(--text);
-        font-size: larger;
-    }
 
         ul {
             display: flex;
+            justify-content: space-between;
             list-style: none;
 
-            a{
+            a {
                 text-decoration: none;
                 color: var(--text);
-                padding-right: 2.5vw;
             }
 
             a:hover {
@@ -55,16 +55,25 @@ header {
                 color: white;
             }
         }
+
+        .header-title {
+            color: var(--text);
+            font-size: larger;
+        }
     }
 }
 
+.top-bar{
+
+}
+
 body {
-background: linear-gradient(to bottom left, var(--darkgrey) 0%, var(--textshadow) 100%);
+    background: linear-gradient(to bottom left, var(--darkgrey) 0%, var(--textshadow) 100%);
 
 
     main {
         margin: 0vw 8vw 0vw 8vw;
-        background: linear-gradient(to top, var(--normalgrey) 0%, var(--dimgrey) 33%);
+        background: linear-gradient(to top, var(--normalgrey) 0%, var(--darkgrey) 25%, var(--darkgrey) 31%, var(--dimgrey) 33%);
         border: solid 1px var(--highlights);
         border-radius: 10px;
         height: 85vh;
