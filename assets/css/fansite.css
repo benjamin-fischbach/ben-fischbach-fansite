@@ -6,21 +6,21 @@
 }
 
 :root {
-    --text:       #b4b4b4;
+    --text: #b4b4b4;
     --textshadow: #000000;
-    --important:  #ffffff;
-    --darkgrey:   #181818;
+    --important: #ffffff;
+    --darkgrey: #181818;
     --normalgrey: #545454;
     --mediumgrey: #00000033;
-    --dimgrey:    #303030;
+    --dimgrey: #303030;
     --highlights: #7f7f7f;
 
-    --green:  #71ff98;
+    --green: #71ff98;
     --yellow: #ffed9f;
     --orange: #ffc36c;
-    --red:    #ff7c61;
+    --red: #ff7c61;
     --purple: #e1a2ff;
-    --blue:   #bccde1;
+    --blue: #bccde1;
 
 }
 
@@ -74,77 +74,119 @@ header {
 
 /* VIEWPORT */
 
-.top-bar{
+.top-bar {
+    display: flex;
+    background-color: var(--mediumgrey);
+    border-radius: 5px 5px 0px 0px;
+    padding: 6px;
+    color: var(--text);
+    min-height: 25px;
+
+    h1 {
+        display: flex;
+        align-items: baseline;
+        font-size: large;
+        font-weight: normal;
+        background-color: var(--darkgrey);
+        border: solid 1px var(--normalgrey);
+        border-radius: 5px;
+        padding: 2px 4px 2px 4px;
+
+        svg{
             display: flex;
-        align-items: center;
-        background-color: var(--mediumgrey);
-        border-radius: 5px 5px 0px 0px;
-        padding: 6px;
-        color: var(--text);
-        min-height: 25px;
-
-        h1{
-            font-size: large;
-            font-weight: normal;
-            background-color: var(--darkgrey);
-            border: solid 1px var(--normalgrey);
-            border-radius: 5px;
-            padding: 2px 4px 2px 4px;
-
+            align-self: center;
         }
+
+    }
 
 }
 
 .top-bar-cut {
     display: flex;
     justify-content: space-between;
-.top-bar-half {
-                display: flex;
+
+    .top-bar-half {
+        display: flex;
         align-items: center;
         background-color: var(--mediumgrey);
         border-radius: 0px 0px 5px 5px;
         padding: 6px;
         color: var(--text);
         min-height: 25px;
-    width: 12%;
-}
+        width: 12%;
+    }
 }
 
 .icons-side-bar {
     margin: 1%;
-    ul{
+
+    ul {
         display: flex;
         flex-direction: column;
         list-style: none;
-        li{
-            button{
+        li {
+            button {
+                border-radius: 5px;
                 background-color: var(--mediumgrey);
                 color: var(--highlights);
                 border: none;
-                padding: 1.5%;
+                padding: 0.5% 1%;
                 margin-bottom: 0.5%;
             }
         }
     }
 }
 
-body {
-    background: linear-gradient(to bottom left, var(--darkgrey) 0%, var(--textshadow) 100%);
-
-
-    main {
-        .viewport{
-        margin: 0vw 8vw 0vw 8vw;
-        background-color: var(--dimgrey);
-        border: solid 1px var(--highlights);
-        border-radius: 10px;
-        height: 82vh;
+    .red-icon {
+        font-weight: bold;
+        color: transparent;
+        text-shadow: 0px 0px 0px var(--red);
     }
 
+    .green-icon {
+        font-weight: bold;
+        color: transparent;
+        text-shadow: 0px 0px 0px var(--green);
     }
 
-    footer {
-        background-color: var(--darkgrey);
+    .yellow-icon {
+        font-weight: bold;
+        color: transparent;
+        text-shadow: 0px 0px 0px var(--yellow);
     }
 
-}
+    .orange-icon {
+        font-weight: bold;
+        color: transparent;
+        text-shadow: 0px 0px 0px var(--orange);
+    }
+
+        .blue-icon {
+        font-weight: bold;
+        color: transparent;
+        text-shadow: 0px 0px 0px var(--blue);
+    }
+
+
+    body {
+        background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
+
+
+        main {
+            .viewport {
+                margin: 0vw 8vw 2vw 8vw;
+                background-color: var(--dimgrey);
+                border: solid 1px var(--highlights);
+                border-radius: 10px;
+                height: 82vh;
+            }
+
+        }
+
+        footer {
+            border-top: solid 1px var(--highlights);
+            background-color: var(--darkgrey);
+            padding: 5%;
+        }
+
+    }
