@@ -64,7 +64,24 @@ header {
 }
 
 .top-bar{
+            display: flex;
+        align-items: center;
+        background-image: linear-gradient(to bottom, var(--dimgrey), var(--normalgrey));
+        box-shadow: 0px -1px 0px var(--highlights);
+        border-bottom: solid 1px var(--textshadow);
+        border-radius: 5px 5px 0px 0px;
+        padding: 6px;
+        color: var(--text);
 
+}
+
+.grid-floor {
+  transform:
+    perspective(2000px)
+    translate3d(0px, -66px, 198px)
+    rotateX(-55deg)
+    scale3d(0.86, 0.75, 1)
+    translateY(50px);
 }
 
 body {
