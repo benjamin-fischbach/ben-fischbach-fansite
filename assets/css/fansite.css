@@ -136,7 +136,7 @@ header {
                 color: var(--text);
                 border: none;
                 padding: 0.5%;
-                margin-bottom: 0.25%;
+                margin-bottom: 1%;
                 width: 10%;
                 min-width: 100px;
             }
@@ -205,6 +205,11 @@ body {
             border: solid 1px var(--highlights);
             border-radius: 10px;
             height: 82vh;
+
+            .icon-bars {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
     }
