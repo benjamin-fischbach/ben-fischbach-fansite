@@ -12,6 +12,7 @@
     --darkgrey: #181818;
     --normalgrey: #545454;
     --mediumgrey: #00000033;
+    --hovergrey:#00000015;
     --dimgrey: #303030;
     --highlights: #7f7f7f;
 
@@ -92,7 +93,7 @@ header {
         border-radius: 5px;
         padding: 2px 4px 2px 4px;
 
-        svg{
+        svg {
             display: flex;
             align-self: center;
         }
@@ -118,75 +119,100 @@ header {
 }
 
 .icons-side-bar {
-    margin: 1%;
+    margin: 0.7%;
 
     ul {
         display: flex;
         flex-direction: column;
         list-style: none;
+
         li {
             button {
-                border-radius: 5px;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                border-radius: 2.5px;
                 background-color: var(--mediumgrey);
-                color: var(--highlights);
+                color: var(--text);
                 border: none;
-                padding: 0.5% 1%;
-                margin-bottom: 0.5%;
+                padding: 0.5%;
+                margin-bottom: 0.25%;
+                width: 10%;
+                min-width: 100px;
             }
+
+                button:hover {
+                    background-color: var(--hovergrey);
+                }
+
+                h2 {
+        display: flex;
+        align-items: baseline;
+        font-size:medium;
+        font-weight:lighter;
+        border-radius: 5px;
+        padding: 2px 4px 2px 4px;
+
+        }
+            }
+
         }
     }
-}
 
-    .red-icon {
-        font-weight: bold;
+
+.icon {
+    .red {
         color: transparent;
         text-shadow: 0px 0px 0px var(--red);
     }
 
-    .green-icon {
-        font-weight: bold;
+    .green {
         color: transparent;
         text-shadow: 0px 0px 0px var(--green);
     }
 
-    .yellow-icon {
-        font-weight: bold;
+    .yellow {
         color: transparent;
         text-shadow: 0px 0px 0px var(--yellow);
     }
 
-    .orange-icon {
-        font-weight: bold;
+    .orange {
         color: transparent;
         text-shadow: 0px 0px 0px var(--orange);
     }
 
-        .blue-icon {
-        font-weight: bold;
+    .blue {
         color: transparent;
         text-shadow: 0px 0px 0px var(--blue);
+
+
     }
 
-
-    body {
-        background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
+}
 
 
-        main {
-            .viewport {
-                margin: 0vw 8vw 2vw 8vw;
-                background-color: var(--dimgrey);
-                border: solid 1px var(--highlights);
-                border-radius: 10px;
-                height: 82vh;
-            }
 
-        }
 
-        footer {
-            border-top: solid 1px var(--highlights);
-            background-color: var(--darkgrey);
-            padding: 5%;
+
+body {
+    background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
+
+
+    main {
+        .viewport {
+            margin: 0vw 8vw 2vw 8vw;
+            background-color: var(--dimgrey);
+            border: solid 1px var(--highlights);
+            border-radius: 10px;
+            height: 82vh;
         }
 
     }
+
+    footer {
+        border-top: solid 1px var(--highlights);
+        background-color: var(--darkgrey);
+        padding: 5%;
+    }
+
+}
