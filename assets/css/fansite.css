@@ -84,12 +84,15 @@ header {
     padding: 6px;
     color: var(--text);
     min-height: 25px;
+    overflow-x: hidden;
 
     .left {
         display: flex;
+        flex-shrink: 0;
 
         h1 {
             display: flex;
+            
             align-items: baseline;
             font-size: large;
             font-weight: normal;
@@ -103,6 +106,49 @@ header {
                 align-self: center;
             }
         }
+    }
+
+    .center {
+        display: flex;
+        flex-shrink: 0;
+        h1 {
+            display: flex;
+            
+            align-items: baseline;
+            font-size: large;
+            font-weight: normal;
+            background-color: var(--darkgrey);
+            border: solid 1px var(--normalgrey);
+            border-radius: 5px;
+            padding: 2px 4px 2px 4px;
+
+            svg {
+                display: flex;
+                align-self: center;
+            }
+        }
+
+                .UI-space {
+            width: 0.5vw;
+        }
+
+                h2 {
+            display: flex;
+            align-items: baseline;
+            font-size: large;
+            font-weight: normal;
+            background-color: var(--normalgrey);
+            border-radius: 1.25px;
+            padding: 4px 4px 4px 4px;
+            margin: 0.5px;
+
+                        svg {
+                display: flex;
+                align-self: center;
+            }
+        }
+
+        
     }
 
     .right {
@@ -315,7 +361,11 @@ body {
     main {
         .viewport {
             margin: 0vw 8vw 2vw 8vw;
-            background-color: var(--dimgrey);
+            background-image: url("../img/viewport.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
             border: solid 1px var(--highlights);
             border-radius: 10px;
             height: 82vh;
