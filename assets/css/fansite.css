@@ -135,7 +135,7 @@ header {
             font-weight: normal;
             background-color: var(--normalgrey);
             border-radius: 1.25px;
-            padding: 2px 4px 2px 4px;
+            padding: 4px 4px 4px 4px;
             margin: 0.5px;
 
                         svg {
@@ -154,12 +154,41 @@ header {
     .top-bar-half {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: var(--mediumgrey);
         border-radius: 0px 0px 5px 5px;
         padding: 6px;
         color: var(--text);
         min-height: 25px;
-        width: 12%;
+        min-width: 10%;
+
+                h1 {
+            display: flex;
+            align-items: baseline;
+            font-size: large;
+            font-weight: normal;
+            background-color: var(--darkgrey);
+            border: solid 1px var(--normalgrey);
+            border-radius: 5px;
+            padding: 2px 6px 2px 6px;
+
+            
+
+            svg {
+                display: flex;
+                align-self: center;
+            }
+        }
+        h2 {
+            display: flex;
+            align-items: baseline;
+            font-size: large;
+            font-weight: normal;
+            background-color: var(--normalgrey);
+            border-radius: 1.25px;
+            padding: 4px 4px 4px 4px;
+            margin: 0.5px;
+            }
     }
 }
 
